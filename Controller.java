@@ -1,16 +1,14 @@
-
 import javafx.fxml.FXML;
+
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
 import java.text.NumberFormat;
 import javafx.event.ActionEvent;
 
+public class Controller {
 
-class Controller {
-
-    Dreieck dreieck;
-
+     Dreieck dreieck;
     @FXML
     private TextField txtA;
 
@@ -19,12 +17,14 @@ class Controller {
 
     @FXML
     private Label lblErg;
-
+    
     @FXML
     void initialize() {
         dreieck = new Dreieck();
 
     }
+
+    
 
     @FXML
     void berechne_a_c(ActionEvent event) {
